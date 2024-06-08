@@ -1,0 +1,70 @@
+<body>
+    <div class="main1">
+        <script>
+            class Product {
+                constructor (name, price, qty){
+                    this.name = name;
+                    this.price = price;
+                    this.qty = qty;
+                }
+
+                print() {
+                document.write(`<div>${this.name} 가격은 <span class="st1">${this.price}</span>원 , 수량은 <span class="st1">${this.qty}</span>, 판매가격은 <span class="st2">${this.price*this.qty}</span>원 입니다. </div>`)
+                } 
+            }
+
+            let aa = [
+                new Product("새우깡", 3500, 15),
+                new Product("감자깡", 2800, 10),
+                new Product("몽쉘통통", 3000, 5),
+                new Product("꿀꽈배기", 2600, 10),
+            ];
+            
+            for (let product of aa){
+                product.print();
+            }
+        </script>
+    </div>
+</body>
+<style>
+    .main1{
+        border: 3px solid pink;
+        box-shadow: 3px 3px 3px gray;
+        
+    }
+    .st1{
+        color: green;
+        font-style: oblique;
+        text-decoration: underline;
+        text-decoration-style: double;
+        text-decoration-color: red;
+    }
+    .st2{
+        border: 2px solid red;
+    }
+    div{
+        padding: 3px;
+        color: blue;
+    }
+</style>
+
+<!-- <script>
+class Product {
+    constructor (name, price, qty){
+        this.name = name;
+        this.price = price;
+        this.qty = qty;
+    }
+
+    print() {
+    document.write(`<div>${this.name} 가격은 <span class="st1">${this.price}</span>원 , 수량은 <span class="st1">${this.qty}</span>, 판매가격은 <span class="st2">${this.price*this.qty}</span>원 입니다. </div>`)
+    } 
+}
+
+let aa = [
+    new Product("새우깡", 3500, 15),
+    new Product("감자깡", 2800, 10),
+    new Product("몽쉘통통", 3000, 5),
+    new Product("꿀꽈배기", 2600, 10),
+];
+</script> -->

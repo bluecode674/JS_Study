@@ -1,0 +1,21 @@
+<script>
+    let date = new Date();
+    let wol = date.getMonth()+1;
+    document.write("<h1><span style=color:blue;>지금은 "+wol+"월 입니다.</h1>")
+    switch(wol){
+        case 12: case 1: case 2:
+            document.write("<h1>계절은 <span style=background-color:green;color:white;font-family:'궁서';>겨울(Winter)</span> 입니다.</h1>");
+            break;
+        case 3: case 4: case 5:
+            document.write("<h1>계절은 <span style=background-color:green;color:white;font-family:'궁서';>봄(Spring)</span> 입니다.</h1>");
+            break;
+        case 6: case 7: case 8:
+            document.write("<h1>계절은 <span style=background-color:green;color:white;font-family:'궁서';>여름(Summer)</span> 입니다.</h1>");
+            break;
+        case 9: case 10: case 11:
+            document.write("<h1>계절은 <span style=background-color:green;color:white;font-family:'궁서';>가을(Fall)</span> 입니다.</h1>");
+            break;
+    }
+</script>
+
+
